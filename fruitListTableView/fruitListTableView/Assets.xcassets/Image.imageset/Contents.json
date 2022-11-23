@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092356.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092357.jpeg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
