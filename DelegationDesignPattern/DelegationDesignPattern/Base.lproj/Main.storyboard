@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DelegationDesignPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Date Of Birth:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="95x-1s-zwb">
+                                <rect key="frame" x="30.5" y="230" width="353" height="57.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57.5" id="Qoa-jR-TBg"/>
+                                    <constraint firstAttribute="width" constant="353" id="StS-dI-y1V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCP-uc-vrw">
+                                <rect key="frame" x="105.5" y="342" width="203" height="57"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="VfO-Mo-dEp"/>
+                                    <constraint firstAttribute="height" constant="57" id="p6x-Wn-SIz"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Open Calender ">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionOpenCalender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ec7-YB-dlm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.4040112495" green="0.99356061220000003" blue="0.99883872269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NCP-uc-vrw" firstAttribute="top" secondItem="95x-1s-zwb" secondAttribute="bottom" constant="54.5" id="8L6-UA-GVi"/>
+                            <constraint firstItem="95x-1s-zwb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30.5" id="Dm4-HX-YOa"/>
+                            <constraint firstItem="NCP-uc-vrw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ETN-K3-NVx"/>
+                            <constraint firstItem="95x-1s-zwb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="186" id="QJf-Zb-AGj"/>
+                            <constraint firstItem="NCP-uc-vrw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105.5" id="Y0G-wR-2bE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NCP-uc-vrw" secondAttribute="trailing" constant="105.5" id="f7s-OO-Dv0"/>
+                            <constraint firstItem="95x-1s-zwb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vK3-av-9aQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="95x-1s-zwb" secondAttribute="trailing" constant="30.5" id="yKy-Nt-yjV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dobTextField" destination="95x-1s-zwb" id="tZ1-bz-nZo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="29.464285714285712"/>
+        </scene>
+        <!--Date View Controller-->
+        <scene sceneID="biP-de-1KU">
+            <objects>
+                <viewController storyboardIdentifier="DateViewController" modalPresentationStyle="fullScreen" id="7or-Sb-GUC" customClass="DateViewController" customModule="DelegationDesignPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L6G-Fw-pqW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="xXa-5L-zUU">
+                                <rect key="frame" x="20" y="230" width="374" height="313"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="EUU-Zl-L6x"/>
+                                    <constraint firstAttribute="height" constant="313" id="cVp-oL-3vo"/>
+                                </constraints>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUY-IK-FNa">
+                                <rect key="frame" x="105.5" y="590" width="203" height="57"/>
+                                <color key="backgroundColor" red="0.4040112495" green="0.99356061220000003" blue="0.99883872269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="JsS-76-0Gt"/>
+                                    <constraint firstAttribute="height" constant="57" id="LaX-KI-9F5"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Done">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionDone:" destination="7or-Sb-GUC" eventType="touchUpInside" id="3rr-kc-fje"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WQn-qL-YW7"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="SUY-IK-FNa" firstAttribute="centerX" secondItem="WQn-qL-YW7" secondAttribute="centerX" id="6Qa-gT-elg"/>
+                            <constraint firstItem="SUY-IK-FNa" firstAttribute="leading" secondItem="WQn-qL-YW7" secondAttribute="leading" constant="105.5" id="AUq-PR-mEk"/>
+                            <constraint firstItem="xXa-5L-zUU" firstAttribute="centerX" secondItem="WQn-qL-YW7" secondAttribute="centerX" id="AW3-U3-dmd"/>
+                            <constraint firstItem="WQn-qL-YW7" firstAttribute="trailing" secondItem="SUY-IK-FNa" secondAttribute="trailing" constant="105.5" id="G4x-cc-wgM"/>
+                            <constraint firstItem="SUY-IK-FNa" firstAttribute="top" secondItem="xXa-5L-zUU" secondAttribute="bottom" constant="47" id="a7j-G8-wCU"/>
+                            <constraint firstItem="xXa-5L-zUU" firstAttribute="leading" secondItem="WQn-qL-YW7" secondAttribute="leading" constant="20" id="h9z-Dw-hk2"/>
+                            <constraint firstItem="WQn-qL-YW7" firstAttribute="trailing" secondItem="xXa-5L-zUU" secondAttribute="trailing" constant="20" id="sAy-Bi-B5Y"/>
+                            <constraint firstItem="xXa-5L-zUU" firstAttribute="top" secondItem="WQn-qL-YW7" secondAttribute="top" constant="186" id="zpk-pr-8ea"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="xXa-5L-zUU" id="N6l-Xz-VJS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQL-u4-Sha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787" y="29"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
