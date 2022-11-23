@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicUIDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f6d-aa-jdi">
+                                <rect key="frame" x="94.5" y="65" width="225" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="NsQ-cG-nM8"/>
+                                    <constraint firstAttribute="height" constant="48" id="iTW-WU-vtV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Age:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LyW-J1-kPm">
+                                <rect key="frame" x="118.5" y="121" width="177.5" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="cST-K1-b3Q"/>
+                                    <constraint firstAttribute="width" constant="177.5" id="yEt-gz-cqm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrg-S9-6Qy">
+                                <rect key="frame" x="136" y="204" width="140" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="G9a-PE-XTX"/>
+                                    <constraint firstAttribute="height" constant="57" id="N8I-EQ-gGK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title=" Submit">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="24"/>
+                                    <color key="baseForegroundColor" red="0.87058823529999996" green="0.1437697892" blue="0.2279487667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.78575525570000004" green="0.87058823529999996" blue="0.65724268509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TS2-Gu-MNT"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTU-FT-fIg">
+                                <rect key="frame" x="20" y="326" width="374" height="522"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="522" id="9zX-4A-1S4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="cTU-FT-fIg" firstAttribute="top" secondItem="Hrg-S9-6Qy" secondAttribute="bottom" constant="65" id="2NA-OA-gJQ"/>
+                            <constraint firstItem="Hrg-S9-6Qy" firstAttribute="top" secondItem="LyW-J1-kPm" secondAttribute="bottom" constant="35" id="ASR-N3-wNk"/>
+                            <constraint firstItem="LyW-J1-kPm" firstAttribute="top" secondItem="f6d-aa-jdi" secondAttribute="bottom" constant="8" symbolic="YES" id="Idr-ai-QPp"/>
+                            <constraint firstItem="f6d-aa-jdi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="P8z-jR-bsg"/>
+                            <constraint firstItem="Hrg-S9-6Qy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="QCy-2F-wfe"/>
+                            <constraint firstItem="f6d-aa-jdi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="STq-Gi-uQS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cTU-FT-fIg" secondAttribute="bottom" constant="14" id="TBH-gl-4KD"/>
+                            <constraint firstItem="cTU-FT-fIg" firstAttribute="centerX" secondItem="LyW-J1-kPm" secondAttribute="centerX" id="fpY-Cd-gwU"/>
+                            <constraint firstItem="LyW-J1-kPm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rpr-zz-WrN"/>
+                            <constraint firstItem="cTU-FT-fIg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vOj-cV-0R2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageField" destination="LyW-J1-kPm" id="ft3-Ra-2e1"/>
+                        <outlet property="listHieghtConstraint" destination="9zX-4A-1S4" id="g9j-O7-B1k"/>
+                        <outlet property="nameField" destination="f6d-aa-jdi" id="ihR-HW-NZV"/>
+                        <outlet property="nameListView" destination="cTU-FT-fIg" id="rGo-ac-3sB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="43.526785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
