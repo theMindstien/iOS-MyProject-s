@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="busCustomCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="vQZ-0A-4C6">
+                                <rect key="frame" x="0.0" y="-152" width="414" height="1200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYM-BW-hbb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GH4-HZ-lo9">
+                                        <rect key="frame" x="0.0" y="-30" width="414" height="1200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="p66-ce-yj2">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" estimatedRowHeight="180" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="24i-jQ-b8a">
+                                                <rect key="frame" x="8" y="182" width="398" height="429"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="398" id="1lb-0u-BCB"/>
+                                                    <constraint firstAttribute="height" constant="429" id="XXa-rU-a28"/>
+                                                </constraints>
+                                            </tableView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="      𝔹𝕠𝕠𝕜 𝕄𝕪 𝕋𝕒𝕩𝕚" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuH-f9-Xlh">
+                                                <rect key="frame" x="109" y="32" width="212" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="8A3-1q-Mod"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="fPA-LW-A8t"/>
+                                            <constraint firstItem="24i-jQ-b8a" firstAttribute="centerX" secondItem="GH4-HZ-lo9" secondAttribute="centerX" id="tIs-8Y-IAx"/>
+                                            <constraint firstItem="24i-jQ-b8a" firstAttribute="top" secondItem="GH4-HZ-lo9" secondAttribute="top" constant="182" id="vlE-rY-d8f"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="GH4-HZ-lo9" secondAttribute="trailing" id="KuP-gE-LhZ"/>
+                                    <constraint firstItem="GH4-HZ-lo9" firstAttribute="leading" secondItem="lYM-BW-hbb" secondAttribute="leading" id="ZOl-SD-44c"/>
+                                    <constraint firstAttribute="bottom" secondItem="GH4-HZ-lo9" secondAttribute="bottom" id="Zos-so-JJE"/>
+                                    <constraint firstItem="GH4-HZ-lo9" firstAttribute="top" secondItem="lYM-BW-hbb" secondAttribute="top" constant="-30" id="jMe-KB-4l9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.63529411764705879" green="0.59180116618974488" blue="0.51193899221073669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lYM-BW-hbb" secondAttribute="bottom" id="59J-QX-wVq"/>
+                            <constraint firstItem="lYM-BW-hbb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y8x-Zr-zBR"/>
+                            <constraint firstItem="lYM-BW-hbb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hK0-hY-2cr"/>
+                            <constraint firstItem="GH4-HZ-lo9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="nqW-SH-JJp"/>
+                            <constraint firstItem="lYM-BW-hbb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oFJ-26-vip"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TaxiTableView" destination="24i-jQ-b8a" id="pgf-ZZ-mQl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-949.27536231884062" y="-36.160714285714285"/>
+        </scene>
+        <!--Book Seat View Controller-->
+        <scene sceneID="OpI-jy-I4U">
+            <objects>
+                <viewController storyboardIdentifier="BookSeatViewController" modalPresentationStyle="fullScreen" id="NLH-3K-Wbh" customClass="BookSeatViewController" customModule="busCustomCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EWU-Na-vuc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="q6x-km-0Fq">
+                                <rect key="frame" x="-10" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="booking info:" translatesAutoresizingMaskIntoConstraints="NO" id="eLo-I7-J9E">
+                                <rect key="frame" x="37" y="129" width="340" height="561"/>
+                                <color key="backgroundColor" red="0.77946909140698395" green="0.70117535450123092" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="cPg-zh-Em5"/>
+                                    <constraint firstAttribute="height" constant="561" id="vop-ZE-UFe"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y91-xi-l5x">
+                                <rect key="frame" x="127" y="764" width="141" height="76"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="DU8-2B-Yx3"/>
+                                    <constraint firstAttribute="height" constant="76" id="fWl-Im-Lat"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Confirm Booking">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionConfirm:" destination="NLH-3K-Wbh" eventType="touchUpInside" id="u12-XX-MO6"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5I2-fa-Ev1">
+                                <rect key="frame" x="104" y="44" width="206" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tkK-x6-fEc"/>
+                        <color key="backgroundColor" red="0.32658063503172385" green="0.77865136892657816" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eLo-I7-J9E" firstAttribute="leading" secondItem="tkK-x6-fEc" secondAttribute="leading" constant="37" id="5Cl-mE-iPy"/>
+                            <constraint firstItem="eLo-I7-J9E" firstAttribute="top" secondItem="tkK-x6-fEc" secondAttribute="top" constant="85" id="76c-jv-xgk"/>
+                            <constraint firstItem="eLo-I7-J9E" firstAttribute="centerX" secondItem="tkK-x6-fEc" secondAttribute="centerX" id="SD7-y8-DLZ"/>
+                            <constraint firstItem="q6x-km-0Fq" firstAttribute="centerY" secondItem="EWU-Na-vuc" secondAttribute="centerY" id="g7F-uN-N9u"/>
+                            <constraint firstItem="q6x-km-0Fq" firstAttribute="leading" secondItem="tkK-x6-fEc" secondAttribute="leading" id="jLn-wp-UM6"/>
+                            <constraint firstItem="q6x-km-0Fq" firstAttribute="top" secondItem="EWU-Na-vuc" secondAttribute="topMargin" constant="-44" id="oQA-cy-PeC"/>
+                            <constraint firstItem="tkK-x6-fEc" firstAttribute="bottom" secondItem="y91-xi-l5x" secondAttribute="bottom" constant="22" id="reN-pI-YBU"/>
+                            <constraint firstItem="tkK-x6-fEc" firstAttribute="trailing" secondItem="eLo-I7-J9E" secondAttribute="trailing" constant="37" id="sTj-08-qBV"/>
+                            <constraint firstItem="y91-xi-l5x" firstAttribute="leading" secondItem="tkK-x6-fEc" secondAttribute="leading" constant="127" id="tlv-iY-fRO"/>
+                            <constraint firstItem="q6x-km-0Fq" firstAttribute="centerX" secondItem="eLo-I7-J9E" secondAttribute="centerX" id="zFg-F9-mgf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmImage" destination="5I2-fa-Ev1" id="c5Y-cd-kxN"/>
+                        <outlet property="seatBookingTextView" destination="eLo-I7-J9E" id="5a4-oi-FJz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28b-1K-25E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94.20289855072464" y="-36.160714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="travel" width="400" height="300"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
