@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HttpGETRequestProgram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EGY-JI-xhG">
+                                <rect key="frame" x="0.0" y="122" width="414" height="318"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="318" id="9z7-Ty-FwP"/>
+                                    <constraint firstAttribute="width" constant="414" id="bc2-Tg-dZy"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TjV-jY-Q1z">
+                                <rect key="frame" x="188.5" y="521" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="LmU-my-V8W"/>
+                                    <constraint firstAttribute="width" constant="37" id="QcT-Md-UAo"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vs7-AP-gw0">
+                                <rect key="frame" x="113" y="642" width="189" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="jXN-eW-1oH"/>
+                                    <constraint firstAttribute="height" constant="60" id="ysY-Cp-3NM"/>
+                                </constraints>
+                                <color key="tintColor" red="0.93459546569999996" green="0.13775449989999999" blue="0.007552124094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Download">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionOnDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHU-sr-Rjv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Vs7-AP-gw0" firstAttribute="top" secondItem="TjV-jY-Q1z" secondAttribute="bottom" constant="84" id="5WJ-O8-0Ry"/>
+                            <constraint firstItem="TjV-jY-Q1z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C64-IP-fgY"/>
+                            <constraint firstItem="TjV-jY-Q1z" firstAttribute="top" secondItem="EGY-JI-xhG" secondAttribute="bottom" constant="81" id="Djj-Wh-SQI"/>
+                            <constraint firstItem="EGY-JI-xhG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OpA-i4-1uZ"/>
+                            <constraint firstItem="EGY-JI-xhG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gp8-Hl-ocF"/>
+                            <constraint firstItem="Vs7-AP-gw0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="keb-PR-VAb"/>
+                            <constraint firstItem="TjV-jY-Q1z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="188.5" id="oNw-l1-lAD"/>
+                            <constraint firstItem="EGY-JI-xhG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="p5i-U7-rOw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="EGY-JI-xhG" id="OpS-f8-0uz"/>
+                        <outlet property="indicator" destination="TjV-jY-Q1z" id="Fqz-qY-URo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="29.464285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
